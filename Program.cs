@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using PrograFinal.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Conexión a MySQL
+builder.Services.AddDbContext<ProyectoPrograbdContext>(options =>
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))
+    ));
 
 var app = builder.Build();
 
