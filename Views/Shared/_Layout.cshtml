@@ -10,23 +10,60 @@
     <link rel="stylesheet" href="~/PrograFinal.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <style>
+        body {
+            background-color: white;
+        }
+        .navbar {
+            background: #e0e0e0 !important; /* plomo claro */
+            box-shadow: none !important;
+            border-bottom: 1px solid #ddd !important;
+        }
+        footer.footer {
+            background: #e0e0e0 !important; /* plomo claro */
+            width: 100%;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+        main {
+            min-height: 70vh;
+        }
+    </style>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PrograFinal</a>
+                    <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="/img/LOGO PAGINA.png" alt="Logo" style="height:40px;width:40px;margin-right:10px;object-fit:contain;"> LennysMovies
+                    </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Series</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Películas</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="btn btn-danger ms-3" onclick="window.location.href='@Url.Action("Index", "Home")'">Aleatorio</button>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary me-2" href="#">Registrarse</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary" href="#">Iniciar Sesión</a>
+                            </li>
+                        </ul>
                 </div>
             </div>
         </nav>
@@ -37,9 +74,22 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - PrograFinal - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="border-top footer text-muted mt-5">
+        <div class="container d-flex flex-column align-items-center">
+            <div class="mb-2">
+                &copy; 2025 - LennysMovies 
+            </div>
+            <div>
+                <a href="#" id="instagram-link" target="_blank" class="me-3">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="height:32px;width:32px;filter:grayscale(0.5);">
+                </a>
+                <a href="#" id="twitter-link" target="_blank" class="me-3">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="Twitter" style="height:32px;width:32px;filter:grayscale(0.5);">
+                </a>
+                <a href="#" id="youtube-link" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" style="height:32px;width:32px;filter:grayscale(0.5);">
+                </a>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
