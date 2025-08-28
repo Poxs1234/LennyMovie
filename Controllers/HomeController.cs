@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using AspNetCoreGeneratedDocument;
 using Microsoft.AspNetCore.Mvc;
 using PrograFinal.Models;
 
@@ -22,6 +23,21 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Formulario()
+    {
+        return View();
+    }
+    public IActionResult InicioSesion()
+    {
+        return View();
+    }
+
+    public IActionResult CambioContra()
+    {
+        return View();
+    }
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
