@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jefry\\.nuget\\packages\\": {}
+    "C:\\Users\\Fiorella\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jefry\\Desktop\\PrograFinal\\PrograFinal.csproj",
+      "projectUniqueName": "C:\\Users\\Fiorella\\Desktop\\LennyMovie\\PrograFinal.csproj",
       "projectName": "PrograFinal",
-      "projectPath": "C:\\Users\\Jefry\\Desktop\\PrograFinal\\PrograFinal.csproj",
-      "packagesPath": "C:\\Users\\Jefry\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jefry\\Desktop\\PrograFinal\\obj\\",
+      "projectPath": "C:\\Users\\Fiorella\\Desktop\\LennyMovie\\PrograFinal.csproj",
+      "packagesPath": "C:\\Users\\Fiorella\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fiorella\\Desktop\\LennyMovie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jefry\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Fiorella\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
