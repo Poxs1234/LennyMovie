@@ -14,24 +14,84 @@
         header {
             text-align: center;
             margin-bottom: 40px;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 30px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a1a 100%);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
         }
         
         h1 {
-            font-size: 2.8rem;
-            margin-bottom: 10px;
-            background: linear-gradient(90deg, #ffffff, #ffffff);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-shadow: 0 2px 10px rgba(10, 196, 247, 0.5);
         }
         
-        .subtitle {
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 15px 25px;
+            width: 100%;
+            max-width: 500px;
+            border: 2px solid #0AC4F7;
+            transition: all 0.3s ease;
+        }
+        
+        .search-box:hover {
+            box-shadow: 0 0 15px rgba(10, 196, 247, 0.5);
+        }
+        
+        .search-box input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            padding: 5px 10px;
+            outline: none;
+        }
+        
+        .search-box button {
+            background: transparent;
+            border: none;
+            color: #0AC4F7;
+            cursor: pointer;
             font-size: 1.2rem;
-            color: #cbd5e1;
-            max-width: 800px;
-            margin: 0 auto;
+            padding: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .search-box button:hover {
+            transform: scale(1.2);
+        }
+        
+        .btn-random {
+            background: linear-gradient(90deg, #0AC4F7, #2de2ff);
+            color: #000;
+            border: none;
+            border-radius: 50px;
+            padding: 16px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(10, 196, 247, 0.4);
+        }
+        
+        .btn-random:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(10, 196, 247, 0.6);
         }
         
         .category {
@@ -41,22 +101,14 @@
         
         .category-title {
             font-size: 2rem;
-            padding: 15px 20px;
+            padding: 15px 25px;
             margin-bottom: 25px;
-            border-left: 5px solid;
+            border-left: 5px solid #0AC4F7;
             border-radius: 4px;
             display: inline-block;
+            background-color: rgba(10, 196, 247, 0.1);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        
-        .drama-title {
             color: #ffffff;
-            border-color: #ffffff;
-        }
-        
-        .animadas-title {
-            color: #ffffff;
-            border-color: #ffffff;
         }
         
         .movies-container {
@@ -86,15 +138,7 @@
             width: 100%;
             height: 350px;
             object-fit: cover;
-            border-bottom: 2px solid;
-        }
-        
-        .drama .movie-poster {
-            border-color: #0AC4F7;
-        }
-        
-        .animadas .movie-poster {
-            border-color: #0AC4F7;
+            border-bottom: 2px solid #0AC4F7;
         }
         
         .movie-info {
@@ -105,6 +149,7 @@
             font-size: 1.3rem;
             margin-bottom: 10px;
             font-weight: 600;
+            color: #ffffff;
         }
         
         .movie-description {
@@ -123,31 +168,22 @@
             transform: translateY(-50%);
             width: 50px;
             height: 50px;
-            background-color: rgba(30, 41, 59, 0.9);
+            background-color: rgba(0, 0, 0, 0.8);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
+            color: white;
             cursor: pointer;
             z-index: 10;
             transition: all 0.3s ease;
-            border: 2px solid;
+            border: 2px solid #0AC4F7;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
         
-        .drama .nav-arrow {
-            border-color: #0AC4F7;
-            color: #0AC4F7;
-        }
-        
-        .animadas .nav-arrow {
-            border-color: #0AC4F7;
-            color: #0AC4F7;
-        }
-        
         .nav-arrow:hover {
-            background-color: rgba(30, 41, 59, 1);
+            background-color: rgba(10, 196, 247, 0.2);
             transform: translateY(-50%) scale(1.1);
         }
         
@@ -159,41 +195,6 @@
             right: -25px;
         }
         
-        .pagination {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-            gap: 10px;
-        }
-        
-        .pagination-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .drama .pagination-dot {
-            background-color: #0AC4F7;
-            opacity: 0.5;
-        }
-        
-        .drama .pagination-dot.active {
-            opacity: 1;
-            transform: scale(1.2);
-        }
-        
-        .animadas .pagination-dot {
-            background-color: #0AC4F7;
-            opacity: 0.5;
-        }
-        
-        .animadas .pagination-dot.active {
-            opacity: 1;
-            transform: scale(1.2);
-        }
-        
         footer {
             text-align: center;
             margin-top: 50px;
@@ -202,4 +203,58 @@
             font-size: 0.9rem;
         }
         
-       
+        @media (max-width: 768px) {
+            .movie-card {
+                width: 220px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .category-title {
+                font-size: 1.7rem;
+            }
+            
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            
+            .arrow-left {
+                left: -15px;
+            }
+            
+            .arrow-right {
+                right: -15px;
+            }
+            
+            .search-container {
+                flex-direction: column;
+            }
+            
+            .search-box {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .movie-card {
+                width: 200px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .category-title {
+                font-size: 1.5rem;
+            }
+            
+            .nav-arrow {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+        }

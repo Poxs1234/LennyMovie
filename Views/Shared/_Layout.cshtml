@@ -12,15 +12,15 @@
 <body>
     <style>
         body {
-            background-color: white;
+            background-color: #0a0a0a;
         }
         .navbar {
-            background: #e0e0e0 !important; /* plomo claro */
+            background: #fbf8f800 !important; /* plomo claro */
             box-shadow: none !important;
             border-bottom: 1px solid #ddd !important;
         }
         footer.footer {
-            background: #e0e0e0 !important; /* plomo claro */
+            background: #000000 !important; /* plomo claro */
             width: 100%;
             position: fixed;
             left: 0;
@@ -34,7 +34,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom mb-3">
             <div class="container-fluid">
-                    <a class="navbar-brand d-flex align-items-center" asp-area="" asp-controller="Home" asp-action="Index">
+                    <a class="navbar-brand d-flex align-items-center text-light" asp-area="" asp-controller="Home" asp-action="Index">
                         <img src="/img/LOGO PAGINA.png" alt="Logo" style="height:40px;width:40px;margin-right:10px;object-fit:contain;"> LennysMovies
                     </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -44,16 +44,14 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" href="#">Series</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Pelis" asp-action="peliculas">Peliculas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Peliculas">Peliculas</a>
+                                <a class="nav-link text-light" asp-area="" asp-controller="Series" asp-action="series">Series</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Series">Series</a>
                         </ul>
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
