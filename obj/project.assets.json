@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\corre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Progra_trabajo\\LennyMovie\\PrograFinal.csproj",
+      "projectUniqueName": "C:\\Users\\corre\\OneDrive\\Escritorio\\PROYECTO LENNY\\LennyMovie\\PrograFinal.csproj",
       "projectName": "PrograFinal",
-      "projectPath": "C:\\Users\\User\\Desktop\\Progra_trabajo\\LennyMovie\\PrograFinal.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Progra_trabajo\\LennyMovie\\obj\\",
+      "projectPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\PROYECTO LENNY\\LennyMovie\\PrograFinal.csproj",
+      "packagesPath": "C:\\Users\\corre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\corre\\OneDrive\\Escritorio\\PROYECTO LENNY\\LennyMovie\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\corre\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
