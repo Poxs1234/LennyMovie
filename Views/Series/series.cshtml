@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Series</title>
+    <link rel="stylesheet" href="/css/peliculas.css">
+   
+</head>
+<body>
+    <header>
+        <h1>¿No sabes qué ver?</h1>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Buscar películas...">
+                <button>✕</button>
+            </div>
+    </div>
+
+    <button class="btn-random">Modo Aleatorio</button>
+
+    </header>
+    
+    <main>
+        <section class="category drama">
+            <h2 class="category-title drama-title">Drama</h2>
+            
+            <div class="nav-arrow arrow-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="movies-container" id="drama-container">
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=SE" alt="SE" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Aquaman</h3>
+                        <p class="movie-description">Una conmovedora historia sobre las decisiones que definen nuestras vidas y las segundas oportunidades.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=VERGAGNOSIO" alt="VERGAGNOSIO" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Interestellar</h3>
+                        <p class="movie-description">Un intenso drama que explora los límites de la moralidad y la redención en tiempos difíciles.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=DRAMA+1" alt="Drama 1" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Sé lo que hicieron el verano pasado</h3>
+                        <p class="movie-description">La historia de un músico que pierde su don y debe encontrar su verdadera identidad más allá del arte.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=DRAMA+2" alt="Drama 2" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Estación zombie</h3>
+                        <p class="movie-description">Un abogado debe enfrentar los secretos de su familia mientras defiende a un cliente inocente.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=DRAMA+3" alt="Drama 3" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Venom el último baile</h3>
+                        <p class="movie-description">Una mujer descubre cartas de amor de la guerra que revelan una historia familiar oculta por décadas.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=DRAMA+4" alt="Drama 4" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">El Refugio</h3>
+                        <p class="movie-description">Un hombre solitario encuentra propósito cuando ayuda a refugiados a cruzar la frontera hacia seguridad.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-arrow arrow-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            
+            <div class="pagination" id="drama-pagination">
+                <div class="pagination-dot active" data-index="0"></div>
+                <div class="pagination-dot" data-index="1"></div>
+            </div>
+        </section>
+        
+        <section class="category animadas">
+            <h2 class="category-title animadas-title">Animadas</h2>
+            
+            <div class="nav-arrow arrow-left">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            
+            <div class="movies-container" id="animadas-container">
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=TOTORO" alt="TOTORO" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">Mi vecino totoro</h3>
+                        <p class="movie-description">Dos niñas descubren un mundo mágico de espíritus del bosque cuando se mudan al campo para estar cerca de su madre enferma.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=MEGAMENTE" alt="MEGAMENTE" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">MEGAMENTE</h3>
+                        <p class="movie-description">Un supervillano exitoso se da cuenta de que necesita un nuevo propósito después de derrotar a su némesis, el superhéroe.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=CATO-BOTAS" alt="CATO-BOTAS" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">El gato con botas</h3>
+                        <p class="movie-description">Las aventuras del gato más valiente y carismático en su búsqueda por recuperar su honor y ayudar a sus amigos.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=ANIMADA+1" alt="Animada 1" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">El castillo vagabundo</h3>
+                        <p class="movie-description">Una joven debe cruzar un mundo fantástico para devolver la luz a su aldea, haciendo amigos increíbles en el camino.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=ANIMADA+2" alt="Animada 2" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">El cuento de la princesa kaguya</h3>
+                        <p class="movie-description">Un grupo de robots con emociones humanas se embarca en una aventura para salvar su hogar de la destrucción.</p>
+                    </div>
+                </div>
+                
+                <div class="movie-card">
+                    <img src="https://via.placeholder.com/250x350/1e293b/ffffff?text=ANIMADA+3" alt="Animada 3" class="movie-poster">
+                    <div class="movie-info">
+                        <h3 class="movie-title">El Jardín Secreto</h3>
+                        <p class="movie-description">Tres niños descubren un jardín mágico que tiene el poder de curar y transformar sus vidas y su comunidad.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-arrow arrow-right">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            
+            <div class="pagination" id="animadas-pagination">
+                <div class="pagination-dot active" data-index="0"></div>
+                <div class="pagination-dot" data-index="1"></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Catálogo de Películas. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Configuración para cada categoría
+            const categories = [
+                {
+                    container: document.getElementById('drama-container'),
+                    leftArrow: document.querySelector('.drama .arrow-left'),
+                    rightArrow: document.querySelector('.drama .arrow-right'),
+                    pagination: document.getElementById('drama-pagination'),
+                    currentPosition: 0
+                },
+                {
+                    container: document.getElementById('animadas-container'),
+                    leftArrow: document.querySelector('.animadas .arrow-left'),
+                    rightArrow: document.querySelector('.animadas .arrow-right'),
+                    pagination: document.getElementById('animadas-pagination'),
+                    currentPosition: 0
+                }
+            ];
+            
+            // Calcular el ancho de una tarjeta + gap
+            const cardWidth = 250 + 25; // width + gap
+            
+            // Configurar la navegación para cada categoría
+            categories.forEach((category, categoryIndex) => {
+                const totalCards = category.container.children.length;
+                const cardsPerView = Math.floor(category.container.offsetWidth / cardWidth);
+                const totalPages = Math.ceil(totalCards / cardsPerView);
+                
+                // Actualizar puntos de paginación
+                category.pagination.innerHTML = '';
+                for (let i = 0; i < totalPages; i++) {
+                    const dot = document.createElement('div');
+                    dot.className = 'pagination-dot' + (i === 0 ? ' active' : '');
+                    dot.setAttribute('data-index', i);
+                    dot.addEventListener('click', () => {
+                        category.currentPosition = i;
+                        updateCategoryView(category);
+                    });
+                    category.pagination.appendChild(dot);
+                }
+                
+                // Event listeners para flechas
+                category.leftArrow.addEventListener('click', () => {
+                    if (category.currentPosition > 0) {
+                        category.currentPosition--;
+                        updateCategoryView(category);
+                    }
+                });
+                
+                category.rightArrow.addEventListener('click', () => {
+                    if (category.currentPosition < totalPages - 1) {
+                        category.currentPosition++;
+                        updateCategoryView(category);
+                    }
+                });
+            });
+            
+            // Función para actualizar la vista de la categoría
+            function updateCategoryView(category) {
+                const scrollAmount = category.currentPosition * category.container.offsetWidth;
+                category.container.scrollTo({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+                
+                // Actualizar puntos de paginación
+                const dots = category.pagination.querySelectorAll('.pagination-dot');
+                dots.forEach((dot, index) => {
+                    if (index === category.currentPosition) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
